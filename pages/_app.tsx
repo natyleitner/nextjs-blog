@@ -1,4 +1,5 @@
 import '../styles/global.css';
+import { AppProps } from 'next/app';
 
 /**
  * Notes
@@ -7,6 +8,6 @@ import '../styles/global.css';
  * This file is the only one where you can import global styles!!!
  */
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
 }
